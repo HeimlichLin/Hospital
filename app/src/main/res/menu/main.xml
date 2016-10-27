@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 有位置的話在上方顯示為圖示-->
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search_white_48dp"
+        android:title="search"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="android.support.v7.widget.SearchView"/>
+
+    <!-- 一律顯示在選單裡-->
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_introduction"
+        android:orderInCategory="100"
+        android:title="@string/action_introduction"
+        app:showAsAction="never" />
+
+</menu>
